@@ -5,7 +5,7 @@
     "colab": {
       "name": "1-202255127.py",
       "provenance": [],
-      "authorship_tag": "ABX9TyPtRGkiaxc2EN6G+OYvGTW5",
+      "authorship_tag": "ABX9TyPIG0Ecmh/5bV/RvNt/QOBe",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,45 +29,17 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 27,
+      "execution_count": null,
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "iwwPS-BMkRHV",
-        "outputId": "68439d99-fb62-41d0-aa2c-986ad3eac551"
+        "id": "rcs0T_-JGRO0"
       },
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "26 1000 5\n",
-            "Trip #1: 1.29 928.20\n",
-            "27.25 873234 3000\n",
-            "Trip #2: 1179.86 1415.84\n",
-            "26 0 1000\n"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
-        "i=0\n",
-        "while True:\n",
-        " inch, rot, sec = map(float, input().split())\n",
-        " if rot==0:\n",
-        "    break\n",
-        " i+=1\n",
-        " d=inch*3.1415927*(1/(12*5280))*rot\n",
-        " dis=round(d,3)\n",
-        " dis=format(dis,\".2f\")\n",
-        "\n",
-        " vel=d/(sec/3600)\n",
-        " v=round(vel,3)\n",
-        " v=format(v,\".2f\")\n",
-        "\n",
-        " print(f'Trip #{i}:',end=' ')\n",
-        " print(dis, end=' ')\n",
-        " print(v)\n"
+        "n=int(input())\n",
+        "for i in range(0,n):\n",
+        "  A, B=map(int, input().split())\n",
+        "  res=A+B\n",
+        "  print(f'Case {i+1}: {res}')"
       ]
     }
   ]
